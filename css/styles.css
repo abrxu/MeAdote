@@ -1,0 +1,679 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 1610px) {
+  .hero-bottom {
+    margin-top: -15rem !important;
+  }
+
+  .hero-h1 {
+    font-size: 45px !important;
+    line-height: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  body {
+    font-size: 14px;
+  }
+
+  #sobre-meadote {
+    font-size: 4rem !important;
+    margin-bottom: 7.5rem;
+  }
+
+  .sobre-image {
+    width: 18rem !important;
+  }
+
+  .info p {
+    font-size: 16px;
+  }
+
+  .hero-section {
+    margin-top: 1.5rem !important;
+  }
+
+  .hero-bottom {
+    margin-top: -12.5rem !important;
+  }
+
+}
+
+@media only screen and (max-width: 1080px) {
+  body {
+    font-size: 12px;
+  }
+
+  .info p {
+    font-size: 14px !important;
+  }
+
+  .sobre-image {
+    width: 15rem !important;
+    margin-left: 50px !important;
+  }
+
+  .hero-patinhas {
+    margin-top: 7.5rem;
+  }
+
+  .hero-h1 {
+    margin-top: 3.5rem;
+    font-size: 30px !important;
+    line-height: 30px !important;
+  }
+
+  .hero-bottom {
+    display: none;
+  }
+
+  #sobre-meadote {
+    font-size: 50px !important;
+    margin-top: 5rem !important;
+  }
+
+  hr {
+    display: none !important;
+  }
+
+  #formulario-de-adocao {
+    font-size: 50px !important;
+  }
+
+  #processo-de-adocao {
+    font-size: 50px !important;
+  }
+
+  #img-form {
+    width: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+
+  .menu-button {
+    display: block !important;
+    background-color: none !important;
+  }
+
+  .nav-buttons a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    border: none !important;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: none !important; /* Cor de fundo branca */
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+
+  .info p {
+    font-size: 12px !important;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  #img-form {
+    display: none;
+  }
+
+  .form-container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .hero-patinhas {
+    width: 45% !important;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  .sobre-image {
+    display: none !important;
+  }
+
+  .header4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media only screen and (max-width: 490px) {
+
+  .header1 img {
+    display: none;
+  }
+
+  .hero-h1 {
+    font-size: 40px !important;
+    line-height: 40px !important;
+  }
+
+  .hero-section {
+    margin-top: -3rem !important;
+  }
+
+  .hero-patinhas {
+    width: 80% !important;
+  }
+
+  #sobre-meadote {
+    font-size: 45px !important;
+  }
+
+  .sobre-image {
+    display: none !important;
+  }
+
+  #processo-de-adocao {
+    font-size: 35px !important;
+  }
+
+  .info-processo {
+    margin-top: 20px !important;
+  }
+
+  .info-processo p {
+    font-size: 11px;
+  }
+
+  #formulario-de-adocao {
+    font-size: 32.5px !important;
+  }
+
+  .info {
+    width: 95% !important;
+  }
+
+  .info p {
+    font-size: 13px !important;
+  }
+
+  #img-form {
+    display: none;
+  }
+
+  .sidebar{
+    width: 100% !important;
+    height: 100vh !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  .hero-section {
+    margin-top: -3rem !important;
+  }
+
+  .hero-patinhas {
+    width: 70% !important;
+  }
+
+  .hero-h1 {
+    font-size: 30px !important;
+  }
+
+  #sobre-meadote {
+    font-size: 35px !important;
+  }
+
+  #processo-de-adocao {
+    font-size: 35px !important;
+  }
+
+  .info-processo {
+    margin-top: 20px !important;
+  }
+
+  .info-processo p {
+    font-size: 11px;
+  }
+
+  #formulario-de-adocao {
+    font-size: 35px !important;
+  }
+
+  .info {
+    width: 100% !important;
+  }
+
+  .info p {
+    font-size: 11px !important;
+  }
+
+}
+
+.logo {
+  width: 80px !important;
+}
+
+.nav-buttons {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-buttons li {
+  margin: 0 1em;
+}
+
+.menu-button {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #a30647;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 1rem;
+}
+
+.sidebar li {
+  padding-top: 0.5rem;
+  margin: 0 2rem;
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 15px 20px;
+  border-radius: 30px;
+  margin-top: 100rem;
+  width: 100%;
+}
+
+.nav-buttons a {
+  color: white; /* Cor do texto preto */
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 15px 15px;
+  border-radius: 30px;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  position: relative; /* Adiciona essa linha */
+}
+
+.hero-patinhas {
+  position: relative;
+  width: 30%;
+  -webkit-animation: spin 15s linear infinite;
+  -moz-animation: spin 15s linear infinite;
+  animation: spin 15s linear infinite;
+  z-index: 1;
+}
+
+.hero-h1 {
+  font-size: 60px;
+  line-height: 75px;
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para centralização exata */
+  z-index: 2; /* Garante que o texto esteja acima da imagem */
+}
+
+.hero-bottom {
+  margin-top: -20rem;
+  width: 100%;
+}
+
+hr {
+  margin-top: -10px;
+  height: 1rem;
+  background-color: #a30647;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+@media only screen and (max-width: 720px) {
+    body {
+      font-size: 12px;
+    }
+  
+    .info p {
+      font-size: 14px;
+    }
+  }
+
+/* Reset de margem e preenchimento */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5ef;
+}
+
+/* Cabeçalho principal */
+header.header1 {
+  background-color: #a30647;
+  padding: 20px; /* Preenchimento interno */
+  border-radius: 20px;
+  margin: 10px auto 20px; /* Centraliza o cabeçalho horizontalmente e adiciona margem superior e inferior */
+  width: 95%; /* Define a largura do cabeçalho */
+  padding-top: 20px; /* Move o conteúdo para baixo */
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Seção da imagem de fundo */
+.background-image {
+  background-image: url("header1.png");
+  background-size: contain; /* Ajusta o tamanho da imagem para não distorcer */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px; /* Define uma altura maior */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Para garantir que o texto seja legível */
+}
+
+/* Cabeçalho secundário */
+#sobre {
+  display: flex; /* Usa flexbox para alinhar a imagem e o conteúdo */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-around; /* Alinha os itens horizontalmente ao centro */
+  padding: 20px; /* Adiciona espaçamento interno */
+  text-align: left; /* Alinha o texto à esquerda */
+  margin-top: -120px;
+}
+
+.sobre-image {
+    width: 30rem;
+    margin-left: 100px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+#sobre-meadote {
+  font-size: 100px;
+  margin-top: 3.5rem;
+  margin-bottom: 9.15rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Alinha os itens horizontalmente ao centro */
+}
+
+.info {
+  width: 80%; /* Define a largura dos campos de informações */
+  max-width: 920px; /* Define uma largura máxima para os campos */
+  padding: 20px; /* Adiciona espaçamento interno */
+  margin-bottom: 20px; /* Adiciona margem inferior para separar os campos */
+  box-sizing: border-box; /* Inclui padding e border na largura e altura totais do elemento */
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+}
+
+.info p {
+    font-size: 20px;;
+}
+
+.gray {
+  background-color: #cccccc; /* Define a cor de fundo cinza */
+}
+
+.pink {
+  background-color: #ffc0cb; /* Define a cor de fundo rosa fraco */
+}
+
+/* Terceiro cabeçalho */
+header.header3 {
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  margin: 10px auto 20px;
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header.header3 h2 {
+  font-size: 43px;
+  margin: 0;
+}
+
+/* Seção de ícones */
+.icons {
+  display: flex;
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  flex-wrap: wrap; /* Permite que os ícones se ajustem em várias linhas em telas menores */
+  margin-top: 10px; /* Adiciona um espaçamento entre o título e os ícones */
+}
+
+.icon {
+  text-align: center;
+  margin: 10px 20px; /* Adiciona espaçamento vertical e horizontal entre os ícones */
+}
+
+.icon img {
+  max-width: 120px; /* Define a largura máxima dos ícones */
+}
+
+/* Rodapé da seção de adoção */
+section.info-processo {
+  background-color: #ffc0cb; /* Adiciona cor de fundo rosa */
+  border: 2px solid #ffb9d6; /* Borda rosa claro */
+  border-radius: 40px; /* Bordas mais arredondadas */
+  text-align: center;
+  padding: 20px; /* Preenchimento interno */
+  color: #000; /* Cor do texto preto */
+  margin: 10px auto; /* Margem superior e inferior */
+  width: 80%; /* Define a largura do rodapé */
+  margin-top: 3rem;
+}
+header.header4 {
+  background-color: #f5f5ef; /* Cor de fundo padrão */
+  padding: 10px; /* Preenchimento interno */
+  text-align: center; /* Centraliza o texto */
+  position: relative; /* Define a posição */
+  position: relative;
+  top: -10px; /* Ajuste este valor conforme necessário para alinhar corretamente */
+}
+/* Estilo para a imagem à esquerda do formulário */
+.left-image {
+  width: 50%; /* Largura da imagem */
+  margin-right: 100px; /* Espaçamento à direita para separar a imagem do formulário */
+}
+
+#processo-de-adocao {
+  font-size: 80px;
+}
+
+#formulario-de-adocao {
+  font-size: 100px;
+  margin-top: 3.75rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 0 10px 10px 0;
+  padding: 20px;
+  width: 70%;
+  margin: 20px auto;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* Estilo para os campos do formulário */
+.form-group {
+  margin-bottom: 20px; /* Espaçamento entre os campos */
+}
+
+label {
+  display: block; /* Exibe os labels em uma nova linha */
+  font-weight: bold; /* Deixa os labels em negrito */
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 300px; /* Faz os campos de texto ocuparem toda a largura menos o espaço do padding */
+  padding: 10px; /* Preenchimento interno */
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilo para o botão de enviar */
+.submit-button {
+  background-color: #ffc0cb; /* Cor de fundo rosa */
+  color: #ffffff; /* Cor do texto branco */
+  border: none; /* Remove a borda */
+  padding: 10px 20px; /* Preenchimento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mão ao passar por cima */
+  transition: background-color 0.3s; /* Transição suave de cor ao passar por cima */
+}
+
+.submit-button:hover {
+  background-color: #d67683; /* Cor de fundo rosa mais escura ao passar por cima */
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffc0cb; /* Cor de fundo rosa */
+  color: white; /* Cor do texto branco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Inicialmente escondido */
+  z-index: 1000; /* Certifique-se de que está acima de outros elementos */
+}
+
+.scroll-to-top:hover {
+  background-color: #d67683; /* Cor de fundo rosa mais escura ao passar por cima */
+}
+
+/* Estilo para a div da imagem à esquerda */
+
+/* Seção principal */
+main {
+  text-align: center;
+  position: relative;
+  min-height: calc(
+    100vh - 60px
+  ); /* Ajuste a altura subtraindo a altura do cabeçalho */
+}
+
+.background-image p {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fundo semi-transparente para o texto */
+  padding: 1em;
+  border-radius: 10px;
+}
+
+#img-form {
+}
+
+/* Rodapé geral */
+
+#footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 1em 0;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer4 {
+  background-color: #a30647;
+  padding: 0px;
+  text-align: center;
+}
+
+.info-processo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icon {
+  width: 50x; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  margin-left: 10px; /* Espaçamento entre os ícones */
+  margin-right: 10px;
+}
